@@ -1,5 +1,7 @@
-#Задание 1
+#Задание 2
 a = input("Введите строку: ")
+b = input("Введите символ: ")
 
-for i in range(len(a)):
-    print(a[i])
+
+print(a.count(b))
+
