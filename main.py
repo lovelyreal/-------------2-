@@ -1,23 +1,20 @@
-a = input("")
-b = "" #Первое число
+from random import randint
 h = 0
-g = "" #Второе число
-for i in range(len(a)):
-    if a[i] != "+":
-        b+= a[i]
-    elif a[i] == "+" or "*" or "/" or "-":
-        c = a[i]
-        break
-    h += 1
-for i in range(h-len(a)+1,0):
-    g += a[i]
-b = int(b)
-g = int(g)
-if c == "-":
-    print(b-g)
-if c == "*":
-    print(b*g) 
-if c == "/":
-    print(b/g)
-if c == "+":
-    print(b+g)
+g = 0
+u = 0
+
+s=[]
+for i in range (10):
+    a = randint(-100,100)
+    s.append(a)
+    if a < 0:
+        h+=1
+    if a > 0:
+        g += 1
+    if a == 0:
+        u += 1
+print(h)
+print(g)
+print(u)
+print(max(s),min(s))
+print(s)
